@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>mitaii</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Expletus+Sans|Gravitas+One|Rammetto+One&display=swap" rel="stylesheet">
+
+</head>
+<body class="mat-app-background">
+<app-root></app-root>
+<!--<div class="pointer" style="top: -999px; left: -999px;">-->
+<!--  <div class="pointer__cursor"></div>-->
+<!--</div>-->
+
+<!--あまりお行儀が良い感じしないので、jquery,timetreeSDKのスクリプトもangular側で管理したみある-->
+<script src="https://plugins.timetreeapp.com/sdk_v1.js"></script>
+<!--マテリアル化で崩れて、変なとこにポインタ表示されるので一旦消す-->
+<!--<script-->
+<!--  src="https://code.jquery.com/jquery-3.4.1.slim.js"-->
+<!--  integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="-->
+<!--  crossorigin="anonymous">-->
+<!--</script>-->
+<!--&lt;!&ndash;suppress JSUnresolvedLibraryURL &ndash;&gt;-->
+<!--<script>-->
+<!--  // @see https://yappli.co.jp/recruit/-->
+<!--  $(function () {-->
+<!--    var cursor = function () {-->
+<!--      $(document).on({-->
+<!--        mousemove: function (e) {-->
+<!--          var t = e.clientX - $(this).offset().left-->
+<!--            , i = $(this).offset().top + e.clientY;-->
+<!--          $(this).find(".pointer").css({-->
+<!--            top: i,-->
+<!--            left: t-->
+<!--          })-->
+<!--        }-->
+<!--      }, "body");-->
+<!--      var e = $("a, .link:not('.share__btn'), input, .swiper-pagination-bullet, .taglist__item, .drawer-hamburger, .elastic__header:not('.-only-sp .elastic__header'), .toggle__more, .-hover_shadow");-->
+<!--      e.mouseenter(function () {-->
+<!--        $(".pointer").addClass("-hover")-->
+<!--      }),-->
+<!--        e.mouseleave(function () {-->
+<!--          $(".pointer").removeClass("-hover")-->
+<!--        }),-->
+<!--        $(".morebtn a, .backbtn a, .-hover_shadow").mouseenter(function () {-->
+<!--          $(".pointer").addClass("-click")-->
+<!--        }),-->
+<!--        $(".morebtn a, .backbtn a, .-hover_shadow").mouseleave(function () {-->
+<!--          $(".pointer").removeClass("-click")-->
+<!--        }),-->
+<!--        $(".work-arrow").mouseenter(function () {-->
+<!--          $(".pointer").addClass("-arw")-->
+<!--        }),-->
+<!--        $(".work-arrow").mouseleave(function () {-->
+<!--          $(".pointer").removeClass("-arw")-->
+<!--        }),-->
+<!--      $(".edge").length || $(".ie11").length,-->
+<!--        e.click(function () {-->
+<!--          var e = $(".pointer");-->
+<!--          e.addClass("-zoom"),-->
+<!--            setTimeout(function () {-->
+<!--              e.removeClass("-zoom")-->
+<!--            }, 1e3)-->
+<!--        })-->
+<!--    };-->
+<!--    cursor();-->
+<!--  });-->
+<!--</script>-->
+</body>
+</html>

@@ -1,0 +1,36 @@
+div.pickup
+  //display flex
+  text-align center
+
+img
+  width 100vw
+
+header
+  text-align left
+  padding-left 1.25rem
+
+header > h2
+  padding-left: 22px;
+  border-left: 0.1rem solid rgba(255, 255, 255, 0.4);
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size 30px
+  font-weight 800
+
+
+.img-wrap
+  display inline-block
+  overflow: hidden	/*拡大時にはみ出た部分を隠す*/
+  //width: 370px/*画像の幅*/
+  //height: 18vh	/*画像の高さ*/
+
+.img-wrap img
+  display: block
+  transition-duration: 0.3s	/*変化に掛かる時間*/
+
+.img-wrap img:hover
+  transform: scale(1.1)	/*画像の拡大率*/
+  transition-duration: 0.3s	/*変化に掛かる時間*/
+  background-color #050811
+  opacity: 0.6;
+
+

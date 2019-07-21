@@ -1,0 +1,28 @@
+<div>
+  <section class="main">
+    <h1>mitaii</h1>
+    <nav>
+      <section>
+        <h2 (click)="changeSub('genre')">genre</h2>
+        <h2 (click)="changeSub('search')">search</h2>
+      </section>
+
+      <section>
+        <ul>
+          <li><a routerLink="/dashboard">dashboard</a></li>
+          <li><a routerLink="/calendar">calendar</a></li>
+        </ul>
+      </section>
+    </nav>
+  </section>
+
+  <section class="sub" *ngIf="hasSubView()">
+    <!-- genre -->
+    <div>
+      <ul>
+        <li (click)="changeSub('none')">Action</li>
+        <li (click)="changeSub('none')">Horror</li>
+      </ul>
+    </div>
+  </section>
+</div>

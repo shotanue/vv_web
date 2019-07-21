@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+//@import "~ress/dist/ress.min.css";
+@import '~@angular/material/_theming';
+
+@include mat-core();
+
+// @see https://material.io/design/material-studies/rally.html#color
+// @see https://material.io/design/color/#tools-for-picking-colors
+
+$override-dark-theme-background: (
+  background: #050811
+);
+
+$mat-dark-theme-background: map-merge($mat-dark-theme-background, $override-dark-theme-background);
+
+// 色定義： オプションは hue カラーパレットで色コード指定, 参照: https://material.io/design/color/ and https://material.io/tools/color/
+$my-app-primary: mat-palette($mat-light-green, 500);
+$my-app-accent: mat-palette($mat-green, 900);
+$my-app-warn: mat-palette($mat-orange, 500, 900, A100);
+
+
+// テーマとして色定義をまとめる
+$my-app-theme: mat-dark-theme($my-app-primary, $my-app-accent, $my-app-warn);
+
+// カスタムテーマを適用
+@include angular-material-theme($my-app-theme);
+html {
+  margin: 0;
+  overflow: hidden; // スクロール無効化してアプリっぽく
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+}
+#application-wrapper{
+  max-height: 100vh;
+  overflow: auto;
+}
+
+//.mat-app-background{
+//  background: #050811;
+//}
+
+
+//// @see https://yappli.co.jp/recruit/
+//.pointer {
+//  position: fixed;
+//  top: -10px;
+//  left: -10px;
+//  z-index: 99999;
+//  pointer-events: none;
+//}
+//
+//.pointer__cursor {
+//  position: absolute;
+//  top: -5px;
+//  left: -5px;
+//  width: 10px;
+//  height: 10px;
+//  border-radius: 50%;
+//  background: rgba(102, 102, 102, .5);
+//  opacity: 1;
+//  -webkit-transition: all .3s ease;
+//  transition: all .3s ease;
+//}

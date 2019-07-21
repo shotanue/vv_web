@@ -1,0 +1,9 @@
+<div class="carousel">
+  <div *ngFor="let item of carouselItems">
+    <div class="img-wrap">
+      <a [routerLink]="['/movie/detail', item.id]">
+        <img src="{{item.imgUrl}}" alt="">
+      </a>
+    </div>
+  </div>
+</div>

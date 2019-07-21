@@ -1,0 +1,19 @@
+<div class="detail-container" *ngIf="detail; else wip">
+  <section class="catch">
+    <img class="poster" src="{{imgUrl}}" alt="no image found">
+  </section>
+  <section class="summary">
+<!--    <p>{{detail.title}}</p>-->
+<!--    <section *ngIf="translation">-->
+<!--      <h3>あらすじ</h3>-->
+<!--      <p *ngIf="translation.data.overview; then thenBlock; else elseBlock"></p>-->
+<!--      <ng-template #thenBlock>{{translation.data.overview}}</ng-template>-->
+<!--      <ng-template #elseBlock>まだ、あらすじが登録されていないようです</ng-template>-->
+
+<!--    </section>-->
+    <!--    <app-timetree [registerData]="addReleaseDate"></app-timetree>-->
+  </section>
+</div>
+<ng-template #wip>
+  <p>作成中</p>
+</ng-template>

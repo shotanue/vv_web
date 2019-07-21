@@ -1,0 +1,33 @@
+.detail-container
+  display: flex
+  flex-wrap wrap
+  justify-content center
+  align-items center
+  margin 0 auto
+  max-width 50vw
+
+.catch
+  padding-top 15px
+  margin auto auto
+
+.summary
+  padding-top 15px
+
+  &>.link
+    padding-top 15px
+
+.info
+  white-space pre-wrap
+
+
+// スマホなど縦画面時に画像の方がモーダルより大きくならないように調整{
+@media screen and (orientation: portrait)
+  .poster
+    width 50vw /*
+    1：x	1	：	1.503
+    x：1	0.665	：	1
+    ％	39.957	：	60.043
+    整数比	185	：	278
+    */
+    max-width 370px
+    max-height 556px

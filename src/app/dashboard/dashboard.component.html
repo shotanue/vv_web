@@ -1,0 +1,12 @@
+<div class="container">
+  <section class="pickup">
+    <h1>{{msg}}</h1>
+    <app-pickup *ngIf="popularMovies" [popularMovies]="popularMovies"></app-pickup>
+  </section>
+  <section class="popular-movies">
+    <app-popular-movies *ngIf="popularMovies" [popularMovies]="popularMovies"></app-popular-movies>
+  </section>
+  <section class="coming-soon">
+    <app-coming-soon *ngIf="comingSoonMovies" [comingSoonMovies]="comingSoonMovies"></app-coming-soon>
+  </section>
+</div>

@@ -1,0 +1,7 @@
+<div>
+  <header>
+   <!--  ComingSoonだと公開済みの映画が混じることがある問題が発覚したので、一旦Pickupにする  -->
+    <h2>Pickup</h2>
+  </header>
+  <app-carousel *ngIf="comingSoonMovies" [items]="comingSoonMovies"></app-carousel>
+</div>
